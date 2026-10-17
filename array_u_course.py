@@ -121,7 +121,15 @@ print("lets change the one in the 2nd raw and 3rd column to 9")
 eye_array[1:-1,2:3] = 9
 print(eye_array)
 
+print("\n we can also sort the array values using np.sort() function")
+print("............sorting the above example...............")
 
+sorted_array = np.sort(eye_array) #by defalt it sorts by raws
+print(sorted_array)
 
+print("\n sorting by columns")
+sorted_array = np.sort(eye_array, axis=0) # we add the axis argument and set it to 0
+
+print(sorted_array)
 
 
